@@ -15,6 +15,8 @@ let i = inputNumber-1;
 const primeTest = function(inputNumber){
     //add functionality to test if input is actually a number.
     
+
+    //try using booleans
     while (i>0){
 
         if (inputNumber%i===0){
