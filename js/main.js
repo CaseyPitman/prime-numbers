@@ -45,7 +45,7 @@ const execute = function(){
 //calls the execute function
 document.getElementById("submit-button").addEventListener("click", execute);
   
-//Resets the form
+//Resets the input & output fields
 const reset = function(){
   document.getElementById("output-number").value=" ";
   document.getElementById("input-number").value=" ";
