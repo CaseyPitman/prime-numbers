@@ -9,7 +9,12 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -18,21 +23,24 @@
 </head>
 
 <body>
-  <div id ="wrapper">
-    <h1>Prime Number Identifier</h1>
-      <h2>Enter a number to determine if it is prime or composite.</h2>
-      <input id="input-number" class="number-field" type="number" name="input-number" placeholder="Enter a number"/>
-      <br>
-      <button id="submit-button" class="button">Submit</button>
-      <br>
-      <input id="output-number" class="number-field">&nbsp;</input>
-      <br>
-      <button id="reset-button" class="button">Test another number</button>
-      <h3 id="copyright">&copy;&nbsp;2020 | Casey Pitman</h3>
- 
+  <div class ="container-fluid">
+    <h1 class="text-center mt-5 pt-5">Prime Number Identifier</h1>
+      <div class="row my-4">
+        <div class="col-md-3 mx-auto">
+          <input id="input-number" class="form-control text-center my-3" type="number" name="input-number" placeholder="Enter a number"/>
+          <button id="submit-button" class="btn btn-block btn-outline-dark my-3">Submit</button>
+          <input id="output-number" type="text" class="form-control text-center my-3"></input>
+          <button id="reset-button" class="btn btn-block btn-outline-dark">Clear</button>
+        </div>
+    </div>
+    <h4 id="copyright" class="text-center">&copy;&nbsp;2020 | Casey Pitman</h4>
   </div>
 
-  <script type="text/javascript" src="js/main.js"></script>
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
