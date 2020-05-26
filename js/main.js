@@ -8,7 +8,7 @@ let message = "";
 const primeTest = function(inputNumber){
     let i=2; //increments to input, checking for divisibility each time through
     
-    while (i<inputNumber){ //increments through divisors checking for divisibility
+    while (i<inputNumber/2){ //increments through divisors checking for divisibility
       let remainder = inputNumber%i;
       if (remainder===0){
         message = inputNumber + " is COMPOSITE.";
@@ -28,6 +28,9 @@ const execute = function(){
     let inputNumber = document.getElementById("input-number").value;
     if (inputNumber<0){ //user inputs a negative number
       alert("Negative numbers do not meet the definition of either prime or composite.\nPlease enter a positive integer.")
+    }
+    else if(inputNumber.toString().includes(".")){ //User inputs a decimal number
+      alert("Integers are whole numbers only. No decimals, please.") 
     }
     else if (inputNumber==0){ //user inputs zero
       message="Zero is neither prime nor composite."
